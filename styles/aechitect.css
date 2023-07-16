@@ -115,8 +115,11 @@ margin-top: 20px;
    .benner{
     width: 300px;
  }
-    nav {
+    nav,.teams-container {
     flex-direction: column;
+ }
+ .teams-img{
+    grid-template-columns: 1fr;
  }
   }
 
@@ -127,7 +130,7 @@ margin-top: 20px;
         padding: 50px;  
         }
     
-    nav {
+    nav, .teams-container {
         flex-direction: column;
      }
   }
