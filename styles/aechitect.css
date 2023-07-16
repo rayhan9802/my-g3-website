@@ -9,9 +9,9 @@
 
 header{
     background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
 }
 nav{
-    padding: 50px 240px;
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -23,13 +23,13 @@ nav > ul{
 ul li{
     list-style: none;
     color: #424242;
-font-size: 18px;
-font-weight: 500;
-margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px;
 }
 nav a{
     text-decoration: none;
-color:#424242;
+    color:#424242;
 }
 
     /* benner style */
@@ -43,26 +43,91 @@ color:#424242;
 .title{
     font-weight: 700;
     font-size: 40px;
-    text-align: center;
+    color:#131313;
 }
 .title-des{
-    color: #727272;
-text-align: center;
-font-size: 12px;
-font-weight: 400;
+color: #727272;
+
 }
 .btn{
     width: 150px;
-height: 50px;
+    height: 50px;
     border-radius: 5px;
-background: #FF900E;
-border: none;
-color: white;
+    background: #FF900E;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+.container img {
+width: 100%;
 margin-top: 20px;
 }
-.img{
-    max-width: 1400px;
-height: 500px;
-margin: 45px 240px;
 
-}
+
+  /*media query for mobile device*/
+
+  @media screen and (max-width:576px) {
+    header{
+    padding: 10px;  
+    }
+   .benner{
+    width: 300px;
+ }
+    nav {
+    flex-direction: column;
+ }
+  }
+
+  /* medium device*/
+
+  @media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;  
+        }
+    
+    nav {
+        flex-direction: column;
+     }
+  }
+
+    /*main section start*/
+
+    main{
+        max-width: 1400px;
+        margin: 0px auto;
+    }
+
+    .teams-container{
+       display: flex;
+       align-items: center;
+    }
+    .teams-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .team-content{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .teams-title{
+        font-size: 30px;
+    }
+    .teams-title .quick-list{
+        color:#727272;
+        font-weight: 500;
+    }
+    .teams-title .features{
+        color: #FF900E;
+        font-weight: 700;
+    }
+    .teams-title .our{
+        color:#131313;
+        font-weight: 700;
+    }
+    .teams-des{
+        color: #727272;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
